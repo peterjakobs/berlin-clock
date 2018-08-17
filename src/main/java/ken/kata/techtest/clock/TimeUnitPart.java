@@ -39,7 +39,7 @@ public class TimeUnitPart implements TimeUnit {
      */
     private ArrayList<Lamp> clonedLamps() {
         ArrayList<Lamp> lampsCopy = new ArrayList<>(lamps.size());
-        lamps.forEach((lamp) -> lampsCopy.add(lamp.copy()));
+        lamps.forEach(lamp -> lampsCopy.add(lamp.copy()));
         return lampsCopy;
     }
 }
