@@ -17,7 +17,7 @@
         <snapshotRepository>
             <id>artifactory</id>
             <name>artifactory</name>
-            <url>${artifactory_url}</url>
+            <url>http://192.168.1.87:8082/artifactory/example-repo-local</url>
         </snapshotRepository>
     </distributionManagement>
     
