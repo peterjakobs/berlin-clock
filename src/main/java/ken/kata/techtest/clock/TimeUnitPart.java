@@ -26,7 +26,7 @@ public class TimeUnitPart implements TimeUnit {
         ArrayList<Lamp> lampsClone = clonedLamps();
 
         range(0, lampsOnFunction.calculateLampsOnFor(units)).
-                forEach((index) -> lampsClone.get(index).switchOn());
+                forEach(index -> lampsClone.get(index).switchOn());
 
         return lampsClone.stream().
                 map(lamp -> lamp.toString()).
