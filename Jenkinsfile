@@ -14,7 +14,7 @@ pipeline {
                         sonar: {
                             withSonarQubeEnv('mysonar')
                            /* sh "mvn sonar:sonar -Dsonar.host.url=${env.SONARQUBE_HOST}" */
-                            sh "mvn sonar:sonar -Dsonar.host.url=${env.SONAR_HOST_URL}"
+                            sh "mvn sonar:sonar"
                         }
                 )
             }
