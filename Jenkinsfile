@@ -23,12 +23,12 @@ pipeline {
                 }
             }
         }
-       /* stage ('deploy'){
+       stage ('deploy'){
             steps{
                 configFileProvider([configFile(fileId: 'our_settings', variable: 'SETTINGS')]) {
-                    sh "mvn -s $SETTINGS deploy -DskipTests -Dartifactory_url=http://192.168.1.87:8082/artifactory/example-repo-local"
+                    sh "mvn -s $SETTINGS deploy -DskipTests -Dartifactory_url=http://http://gfgepvch0001.fn91.priv/:8082/artifactory/example-repo-local"
                 }
             } 
-        } */
+        }
     }
 }
