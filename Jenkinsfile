@@ -12,8 +12,8 @@ pipeline {
                             sh "mvn -U clean test cobertura:cobertura -Dcobertura.report.format=xml"
                         },
                         sonar: {
-                            /* withSonarQubeEnv('mysonar')
-                            sh "mvn sonar:sonar -Dsonar.host.url=${env.SONARQUBE_HOST}" */
+                            withSonarQubeEnv('mysonar')
+                            /* sh "mvn sonar:sonar -Dsonar.host.url=${env.SONARQUBE_HOST}" */
                             sh "mvn sonar:sonar"
                         }
                 )
