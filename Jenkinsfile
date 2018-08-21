@@ -26,7 +26,7 @@ pipeline {
        stage ('deploy'){
             steps{
                 configFileProvider([configFile(fileId: '8b880586-ab28-40c7-be01-b12932c5ed98', variable: 'SETTINGS')]) {
-                    sh "mvn -s $SETTINGS deploy -DskipTests -Dartifactory_url=http://http://gfgepvch0001.fn91.priv:8081/artifactory/example-repo-local"
+                    sh "mvn -s $SETTINGS deploy -DskipTests -Dartifactory_url=http://gfgepvch0001.fn91.priv:8081/artifactory/example-repo-local"
                 }
             } 
         }
