@@ -14,7 +14,7 @@ pipeline {
                         sonar: {
                             withSonarQubeEnv('mysonar')
                             /* sh "mvn sonar:sonar -Dsonar.host.url=${env.SONARQUBE_HOST}" */
-                            sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+                            sh 'mvn sonar:sonar'
                         }
                 )
             }
