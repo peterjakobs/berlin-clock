@@ -12,7 +12,7 @@ pipeline {
                             sh "mvn -U clean test cobertura:cobertura -Dcobertura.report.format=xml"
                         },
                         sonar: {
-                            sh "mvn sonar:sonar -Dsonar.host.url=http://10.117.7.28:9000/"
+                            sh "mvn sonar:sonar -Dsonar.host.url=${env.SONARQUBE_HOST}"
                         }
                 )
             }
