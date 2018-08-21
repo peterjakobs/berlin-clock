@@ -17,7 +17,7 @@
         <snapshotRepository>
             <id>artifactory</id>
             <name>artifactory</name>
-            <url>http://http://gfgepvch0001.fn91.priv:8081/artifactory/example-repo-local</url>
+            <url>http://gfgepvch0001.fn91.priv:8081/artifactory/example-repo-local</url>
         </snapshotRepository>
     </distributionManagement>
     
