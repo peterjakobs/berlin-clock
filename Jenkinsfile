@@ -27,7 +27,7 @@ pipeline {
         }
        stage ('deploy'){
             steps{
-                configFileProvider([configFile(fileId: '8b880586-ab28-40c7-be01-b12932c5ed98', variable: 'SETTINGS')]) {
+                configFileProvider([configFile(fileId: 'our_settings', variable: 'SETTINGS')]) {
                     sh "mvn -s $SETTINGS deploy -DskipTests -Dartifactory_url=http://jenkins_artifactory:8082/artifactory/example-repo-local"
                 }
             } 
